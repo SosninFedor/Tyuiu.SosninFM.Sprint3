@@ -14,11 +14,11 @@ namespace Tyuiu.SosninFM.Sprint3.Task2.V18.Lib
             do
             {
                 t = Convert.ToDouble(startValue);
-                MultSeries = MultSeries +  Math.Cos(value) + (Math.Pow(t / 8.0, 3));
+                MultSeries = MultSeries * (Math.Cos(value) + (Math.Pow(t / 8.0, 3)));
                 startValue++;
 
             } while (startValue <= stopValue);
-            return Math.Round(MultSeries, 3);
+            return Math.Round(MultSeries, 2);
 
 
         }
