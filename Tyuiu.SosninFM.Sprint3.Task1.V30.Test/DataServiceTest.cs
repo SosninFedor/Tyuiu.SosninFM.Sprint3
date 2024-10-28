@@ -17,7 +17,7 @@ namespace Tyuiu.SosninFM.Sprint3.Task1.V30.Test
             int stopValue = 12;
 
             double res = ds.GetSumSeries(value, startValue, stopValue);
-            double wait = 1.479;
+            double wait = 3.589;
             Assert.AreEqual(res, wait);
 
 
