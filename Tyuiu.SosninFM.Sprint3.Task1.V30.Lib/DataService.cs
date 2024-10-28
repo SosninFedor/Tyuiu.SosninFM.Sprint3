@@ -8,14 +8,14 @@ namespace Tyuiu.SosninFM.Sprint3.Task1.V30.Lib
         public double GetSumSeries(double value, int startValue, int stopValue)
         {   
             double sumSeries = 0;
-            double res = 0;
-            int s = startValue;
+            double p; 
+            
 
             while (startValue <= stopValue)
             {
-                sumSeries = sumSeries + (Math.Pow(value, s) + (5 / (s + 4) * (Math.Sin(value))) );
-                res += sumSeries;
-                sumSeries++; 
+                p = Convert.ToDouble(startValue);
+                sumSeries += (Math.Pow(value, p) + (5 / (p + 4))) * (Math.Sin(value));
+                startValue++; 
             }
 
             return Math.Round(sumSeries, 3);
