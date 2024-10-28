@@ -9,9 +9,12 @@ namespace Tyuiu.SosninFM.Sprint3.Task2.V18.Lib
         {
             
             double MultSeries = 1;
+            double t;
+
             do
             {
-                MultSeries = MultSeries + ((Math.Cos(value)) + (Math.Pow(startValue / 8), 3));
+                t = Convert.ToDouble(startValue);
+                MultSeries = MultSeries +  Math.Cos(value) + (Math.Pow(t / 8.0, 3));
                 startValue++;
 
             } while (startValue <= stopValue);

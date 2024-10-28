@@ -11,12 +11,12 @@ namespace Tyuiu.SosninFM.Sprint3.Task2.V18.Test
         {
             DataService ds = new DataService();
 
-            int value = 2;
+            int value = 1;
             int startValue = 1;
             int stopValue = 14;
 
             double res = ds.GetMultiplySeries(value, startValue, stopValue);
-            double wait = 3.589;
+            double wait = 30.097;
             Assert.AreEqual(res, wait);
 
 
