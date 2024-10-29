@@ -11,16 +11,16 @@ namespace Tyuiu.SosninFM.Sprint3.Task4.V28.Lib
             //При х = 0 пропустить значение. Полученные значения суммировать.
 
             double res = 0;
-            for (int x = startValue; x < stopValue; x++)
+            for (int x = startValue; x <= stopValue; x++)
             {
                 if (x == 0)
                 {
-                    break;
+                    continue;
 
                 }
                 else
                 {
-                    res = res + (Math.Cos(x) + Math.Sin(x) / x);
+                    res = res + ((Math.Cos(x) + Math.Sin(x)) / x);
                 }
             }
             return Math.Round(res,3);
