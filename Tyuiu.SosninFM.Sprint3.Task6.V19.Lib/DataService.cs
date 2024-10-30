@@ -11,7 +11,7 @@ namespace Tyuiu.SosninFM.Sprint3.Task6.V19.Lib
             // количество всех делителей меньше 8
 
             int x;
-            int sum = 0;
+            int aye = 0;
             for (x = startValue; x <= stopValue; x++)
             {
                 for ( int a = 1; a <= x; a++)
@@ -20,12 +20,12 @@ namespace Tyuiu.SosninFM.Sprint3.Task6.V19.Lib
                     {
                         if (a < 8)
                         {
-                            sum++;
+                            aye++;
                         }
                     }
                 }
             }
-            return sum;
+            return aye;
 
 
         }
