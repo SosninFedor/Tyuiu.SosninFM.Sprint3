@@ -16,7 +16,7 @@ namespace Tyuiu.SosninFM.Sprint3.Task6.V19.Test
 
             int res = ds.GetSumTheDivisors(startValue, endValue);
 
-            int wait = 22;
+            int wait = 16;
 
             Assert.AreEqual(res, wait);
 

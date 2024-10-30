@@ -18,7 +18,10 @@ namespace Tyuiu.SosninFM.Sprint3.Task6.V19.Lib
                 {
                     if (x % a == 0)
                     {
-                        sum++;
+                        if (a < 8)
+                        {
+                            sum++;
+                        }
                     }
                 }
             }
